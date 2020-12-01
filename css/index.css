@@ -63,9 +63,11 @@ figure{
 }
 
 .hero{
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
+    overflow: hidden;
 }
 
 .hero-image{
@@ -83,11 +85,18 @@ figure{
     color:white;
     margin:50px;
     align-items: center;
+    text-shadow: 1px 2px 2px #000; /*Interesting tip for highlight text*/
 }
 
 .hero-title-wrap{
     display:flex;
     align-items: center;
+}
+
+.background-hero{
+    position: absolute;
+    z-index: -1;
+    bottom:-200px;
 }
 
 .portfolio{
