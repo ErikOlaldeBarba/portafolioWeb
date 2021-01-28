@@ -22,7 +22,24 @@
     }
     .menu{
         justify-content: center;
+        position:fixed;
+        background-color: rgba(0, 100, 0, 0.9);
+        z-index: 1;
+        top:0;
+        left:-100vw;
+        bottom:0;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size:2rem;
+        transition: .3s;
     }
+
+    .menu.is-active{
+        left:0;
+    }
+
     .header-container{
         display:block;
     }
@@ -36,6 +53,10 @@
 
     .project-titleWrap{
         font-size: 18px;
+    }
+
+    .burger-buttom{
+        display:block;
     }
 }
 
