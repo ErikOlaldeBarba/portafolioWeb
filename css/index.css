@@ -296,3 +296,39 @@ figure{
     left:0;
     right:0;
 }
+
+
+
+.pelota{
+    position: relative;
+    left:0;
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+    background-color: red;
+    transition: 3s;
+    /* transition-property:width,height; */
+    /* transition-delay: 1s; */
+    /* transition-duration: 1s; */
+    /* transition-timing-function: ease; */
+
+}
+
+.pelota2{
+    position: relative;
+    left: 90%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: blue;
+    transition:3s;
+}
+
+
+.canasta:hover .pelota{
+    left:90%;
+}
+
+.canasta:hover .pelota2{
+    left:0;
+}
